@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .2s cubic-bezier(.37, 1, 14, .26 ,1.24 );
+}
+
+:root{
+    --red:#e84118;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header-1 .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-2{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: var(--red);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-2 .navbar{
+    display: flex;
+}
+
+.header-2 li{
+    margin: 0 0.5rem;
+}
+
+.header-2 li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-1, .header-2{
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 1.2rem;
+}
+
+.header-2 .icons i{
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.3rem;
+}   
+
+.header-1 .logo{
+    color: var(--red);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.header-1 .phone-number{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #666;
+}
+
+.home{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.home .content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
