@@ -21,6 +21,15 @@ ul li{
 a{
     text-decoration: none;
 }
+.header{
+    width: 100%;
+}
+
+.header-active{
+    top: 0;
+    position: fixed;
+    left: 0;
+}
 
 .header-1 .content {
     display: flex;
@@ -28,7 +37,7 @@ a{
 }
 
 .header-2{
-    position: fixed;
+    
     width: 100%;
     z-index: 1000;
     background: var(--red);
@@ -74,14 +83,49 @@ a{
 
 .home{
     min-height: 100vh;
-    width: 100%;
-}
-
-.home .content{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    align-items:center;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    background: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content h1{ 
+    font-size: 4rem;
+    color: #fff;
+}
+
+.home .content h1 span{ 
+    color:#e84118;
+}
+
+.home .content p{ 
+    color: #fff;
+    width: 40rem;
+    font-size: 1.3rem;
+}
+
+.home .button{
+    width: 12rem;
+    height: 4rem;
+    border: .14rem solid #fff;
+    padding: 0.4rem;
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.home .content button{ 
+    font-size: 1.2rem;
+    padding: .2rem;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 11rem;
+    height: 3rem;
+    border: .14rem solid #fff;
 }
 
